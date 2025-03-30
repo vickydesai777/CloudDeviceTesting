@@ -29,9 +29,7 @@ public class WindowsMachineTest {
 	public static void main(String[] args) throws Exception {
 		System.out.println("Run started");
 
-		// TODO: change your cloud url
-		String securityToken = "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2ZDM2NmJiNS01NDAyLTQ4MmMtYTVhOC1kODZhODk4MDYyZjIifQ.eyJpYXQiOjE3NDMxODc1NDAsImp0aSI6ImVlNDNjYzJhLTZiZjAtNGNlMS1iY2VhLWQ0NTQyYmI5ZDJjMCIsImlzcyI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsImF1ZCI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsInN1YiI6ImExNjA4YzU1LWE4ZDktNGI4OS05ODA5LWZiODFjOWIzOWIzMiIsInR5cCI6Ik9mZmxpbmUiLCJhenAiOiJvZmZsaW5lLXRva2VuLWdlbmVyYXRvciIsIm5vbmNlIjoiM2U1NDE2YTctMjc4NC00MjBhLWExZjctNDVhYmVjZGMwNmFkIiwic2Vzc2lvbl9zdGF0ZSI6IjNiMzJkNmZiLWVlNzQtNDk0NC1hYmI5LWQ4NGE2M2Q5YzM1YSIsInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIHByb2ZpbGUgZW1haWwiLCJzaWQiOiIzYjMyZDZmYi1lZTc0LTQ5NDQtYWJiOS1kODRhNjNkOWMzNWEifQ.XsPRojWJ5OGn1LeG4P1OWRf39rjgxJHRs8xLiP38Mag";
-		// TODO: change your security Token
+		String securityToken = "SecurityToken";
 		DesiredCapabilities capabilities = new DesiredCapabilities("", "", Platform.ANY);capabilities.setCapability("platformName", "Windows");
 		capabilities.setCapability("securityToken", securityToken);
 		capabilities.setCapability("platformVersion", "11");
@@ -39,7 +37,7 @@ public class WindowsMachineTest {
 		capabilities.setCapability("browserVersion", "134");
 		capabilities.setCapability("location", "US East");
 		capabilities.setCapability("resolution", "1024x768");
-		
+	
 		driver = new RemoteWebDriver(new URL("https://trial.perfectomobile.com/nexperience/perfectomobile/wd/hub"),
 				capabilities);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
