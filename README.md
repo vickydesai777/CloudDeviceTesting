@@ -1,6 +1,5 @@
 ### Sample Java Project
 
-![CircleCI status](https://circleci.com/gh/PerfectoMobileSA/PerfectoJavaSample.svg?style=shield "CircleCI status")
 
 This sample project is designed to get you up and running within few simple steps.
 
@@ -42,10 +41,6 @@ TestNG Plugin is built-in in the IntelliJ IDEA, from version 7 onwards.
 * After downloading and unzipping the project to your computer, open it from your IDE by choosing the folder containing the pom.xml 
 
 **********************
-# Getting Started
-
-* Local Appium prerequisite: Local Appium Server should be running at http://127.0.0.1 ,  port: 4723
-
 
 ## Running sample as is
 
